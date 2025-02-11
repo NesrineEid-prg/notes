@@ -12,6 +12,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Note', debugShowCheckedModeBanner: false, home: MainSc());
+        theme: ThemeData(
+            appBarTheme: Theme.of(context).appBarTheme.copyWith(
+                backgroundColor: Colors.transparent,
+                titleTextStyle: TextStyle(
+                  fontSize: 33,
+                  color: primary,
+                ))),
+        title: 'Note',
+        debugShowCheckedModeBanner: false,
+        home: MainSc());
   }
 }

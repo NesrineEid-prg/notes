@@ -35,6 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   font_awesome_flutter: ^10.8.0
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -74,17 +75,19 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+  fonts:
+    - family: popins
+      fonts:
+        - asset: assets/font/popins/Poppins-Bold.ttf
+        - asset: assets/font/popins/Poppins-Italic.ttf
+        - asset: assets/font/popins/Poppins-Regular.ttf
+          style: italic
+          weight: 700
+    - family: fredoka 
+      fonts:
+        - asset: assets/font/fredoka/Fredoka-Regular.ttf
+        - asset: assets/font/fredoka/Fredoka-Bold.ttf
+          weight: 700
+  
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
